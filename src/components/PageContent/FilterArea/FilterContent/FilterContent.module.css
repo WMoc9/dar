@@ -1,0 +1,42 @@
+.filterContent__img {
+  position: static;
+  width: 369px;
+  height: 160px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+}
+.filterContent__description {
+  position: static;
+  width: 369px;
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.filterContent__container {
+  position: static;
+  width: 417px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.filterContent__description__item {
+  padding: 7px;
+}

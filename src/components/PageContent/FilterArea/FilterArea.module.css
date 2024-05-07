@@ -1,0 +1,13 @@
+.filterArea__container {
+  position: static;
+  width: 465px;
+  max-height: 852px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  background: rgb(255, 255, 255);
+  margin: 12px 0;
+}

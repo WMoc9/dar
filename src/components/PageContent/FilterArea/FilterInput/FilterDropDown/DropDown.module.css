@@ -1,0 +1,13 @@
+.dropDown__container {
+  position: static;
+  width: 417px;
+  height: 38px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  margin: 10px 0px;
+}

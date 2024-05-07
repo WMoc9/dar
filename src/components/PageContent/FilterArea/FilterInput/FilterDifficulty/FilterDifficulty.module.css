@@ -1,0 +1,17 @@
+.difficult__container {
+  position: static;
+  width: 417px;
+  height: 48px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  margin: 0;
+}
+
+.btn__container {
+  display: flex;
+}

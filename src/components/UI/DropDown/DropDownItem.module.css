@@ -1,0 +1,28 @@
+.dropDown__menu {
+  position: relative;
+  width: 285px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 8px 16px;
+  margin: 0 0 0 12px;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 2px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+  background: rgb(255, 255, 255);
+}
+
+.dropDown__space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropDown__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+
+  right: 10%;
+}
