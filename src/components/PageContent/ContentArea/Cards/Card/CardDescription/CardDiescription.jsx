@@ -15,7 +15,7 @@ const CardDiescription = () => {
       </div>
       <div className={classes.description__time}>
         <img src={clocks} alt={"Иконка часов"} />
-        <div>30 минут</div>
+        <div className={classes.description__time__item}>30 минут</div>
       </div>
       <div className={classes.description__difficulty}>
         <div>Сложность:</div>
