@@ -9,6 +9,7 @@
   align-items: flex-start;
   padding: 0px;
   margin: 48px 0px;
+  opacity: 0.5;
 }
 
 .additional__text {

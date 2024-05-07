@@ -1,0 +1,84 @@
+.description__container {
+  width: 226.17px;
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  margin: 0px 0px;
+}
+
+.description__text {
+  width: 178.17px;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0px 0px;
+  color: rgba(0, 0, 0, 0.45);
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.description__time {
+  width: 178.17px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  margin: 8px 0px;
+}
+
+.description__difficulty {
+  width: 178.17px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  margin: 8px 0px;
+}
+
+.description__kitchen {
+  width: 178.17px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  margin: 8px 0px;
+}
+
+.description__meal {
+  width: 178.17px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 8px 0px;
+}
+
+.star__container {
+  width: 76px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  margin: 0px 6px;
+}

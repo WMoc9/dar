@@ -1,0 +1,12 @@
+.contentArea__conatiner {
+  position: static;
+  width: 1405px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+
+  margin: 0px 0px;
+}

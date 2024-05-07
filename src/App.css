@@ -10,3 +10,7 @@
   padding: 12px;
   background: rgb(239, 239, 239);
 }
+
+* {
+  box-sizing: border-box;
+}

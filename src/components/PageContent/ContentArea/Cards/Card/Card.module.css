@@ -1,0 +1,11 @@
+.card__container {
+  width: 452.33px;
+  height: 354px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 6px;
+  background-color: white;
+}

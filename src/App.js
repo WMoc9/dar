@@ -1,12 +1,12 @@
 import "./App.css";
-import FilterArea from "./components/PageContent/FilterArea/FilterArea";
+import PageContent from "./components/PageContent/PageContent";
 
 import PageHeader from "./components/PageHeader/PageHeader";
 function App() {
   return (
     <div className="App">
       <PageHeader />
-      <FilterArea />
+      <PageContent />
     </div>
   );
 }
