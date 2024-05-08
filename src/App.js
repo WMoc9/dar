@@ -1,12 +1,12 @@
 import "./App.css";
-import PageContent from "./components/PageContent/PageContent";
+import SecondPage from "./components/Pages/SecondPage";
+// import MainPage from "./components/Pages/MainPage";
 
-import PageHeader from "./components/PageHeader/PageHeader";
 function App() {
   return (
     <div className="App">
-      <PageHeader />
-      <PageContent />
+      {/* <MainPage /> */}
+      <SecondPage />
     </div>
   );
 }

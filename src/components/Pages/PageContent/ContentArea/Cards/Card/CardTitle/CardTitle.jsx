@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./CardTitle.module.css";
-import img from "../../../../../assets/Image.png";
+import img from "../../../../../../assets/Image.png";
 
 const CardTitle = () => {
   return (

@@ -1,0 +1,10 @@
+.content__container {
+  width: 1896px;
+  height: 852px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 12px 0px;
+}

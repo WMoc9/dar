@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./CardDescription.module.css";
-import clocks from "../../../../../assets/Vector.png";
-import star from "../../../../../assets/icon.png";
-import fillStar from "../../../../../assets/icon (1).png";
+import clocks from "../../../../../../assets/Vector.png";
+import star from "../../../../../../assets/icon.png";
+import fillStar from "../../../../../../assets/icon (1).png";
 
 const CardDiescription = () => {
   return (

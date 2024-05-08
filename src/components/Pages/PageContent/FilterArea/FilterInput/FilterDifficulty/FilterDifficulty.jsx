@@ -1,6 +1,6 @@
 import React from "react";
-import FilterInputTitle from "../../../../UI/FilterInputTitle/FilterInputTitle";
-import CustoButton from "../../../../UI/Buttons/CustoButton";
+import FilterInputTitle from "../../../../../UI/FilterInputTitle/FilterInputTitle";
+import CustoButton from "../../../../../UI/Buttons/CustoButton";
 import classes from "./FilterDifficulty.module.css";
 
 const FilterDifficulty = () => {

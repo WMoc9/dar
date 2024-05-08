@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../assets/Image.png";
+import img from "../../../../assets/Image.png";
 import classes from "./FilterContent.module.css";
 
 const FilterContent = () => {

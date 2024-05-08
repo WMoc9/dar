@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./DropDown.module.css";
-import DropDownItem from "../../../../UI/DropDown/DropDownItem";
-import FilterInputTitle from "../../../../UI/FilterInputTitle/FilterInputTitle";
+import DropDownItem from "../../../../../UI/DropDown/DropDownItem";
+import FilterInputTitle from "../../../../../UI/FilterInputTitle/FilterInputTitle";
 
 const DropDown = ({ title, dropTitle, options }) => {
   return (

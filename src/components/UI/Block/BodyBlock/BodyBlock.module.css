@@ -1,0 +1,58 @@
+.bodyBlock__conatiner {
+  width: 465px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  margin: 0px 0px;
+}
+
+.moreInfo {
+  color: rgba(0, 0, 0, 0.45);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.list {
+  width: 406px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  margin: 0px 0px;
+}
+.list__item {
+  width: 380px;
+  height: 22px;
+  padding: 0px 0px 20px 26px;
+  margin: 0px 0px;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.list__item::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px; /* добавить отступ справа для маркера */
+  left: 6px;
+  top: 6px;
+  box-sizing: border-box;
+  border: 2px solid rgb(24, 144, 255);
+  border-radius: 100px;
+
+  background: rgb(255, 255, 255);
+}

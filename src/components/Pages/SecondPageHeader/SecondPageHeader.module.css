@@ -1,0 +1,49 @@
+.header__conatiner {
+  width: 1896px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 24px 16px 24px;
+  margin: 0px 0px;
+  background: rgb(255, 255, 255);
+}
+
+.header__content {
+  width: 384.25px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 0px 6px 0px;
+  margin: 0;
+}
+
+.header__title {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header__img {
+  position: absolute;
+  width: 13.35px;
+  height: 12.71px;
+  left: 8.92%;
+  right: 8.92%;
+  top: 10.26%;
+  bottom: 10.26%;
+}
+
+.img__container {
+  position: relative;
+  width: 16.25px;
+  height: 16px;
+  margin: 0px 16px;
+}
