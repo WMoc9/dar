@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from "react";
 import classes from "./ImageBlock.module.css";
 import arrowL from "../../../assets/Left.svg";
 import arrowR from "../../../assets/Right.svg";
 import { useNavigate } from "react-router-dom";
-import { fetchAllRecipes } from "../../../../http/recipesAPI";
+import { useSelector } from "react-redux";
 
 const ImageBlock = ({ image, id }) => {
-  const [totalPages, setTotalPages] = useState(0);
-
-  useEffect(() => {
-    fetchAllRecipes().then((data) => {
-      setTotalPages(data.total);
-    });
-  }, []);
+  const totalPosts = useSelector((state) => state.posts.totalPosts);
   const isFirstPage = id === 1;
-  const isLastPage = id === totalPages;
+  const isLastPage = id === totalPosts;
 
   const navigate = useNavigate();
 

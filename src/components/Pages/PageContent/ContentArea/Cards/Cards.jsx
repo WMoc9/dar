@@ -7,12 +7,15 @@ import { Link } from "react-router-dom";
 
 const Cards = () => {
   const [recipesData, setRecipesData] = useState([]);
-  const page = useSelector((state) => state.page.value);
+
+  const page = useSelector((state) => state.page.number);
+
   useEffect(() => {
     fetchRecipesWithLimitAndSkip(6, page === 1 ? 0 : (page - 1) * 6).then(
       (data) => setRecipesData(data.recipes)
     );
   }, [page]);
+
   return (
     <div className={classes.cards__container}>
       {recipesData.length > 0

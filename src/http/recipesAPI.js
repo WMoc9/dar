@@ -3,6 +3,7 @@ import { $host } from "./index";
 
 export const fetchAllRecipes = async () => {
   const { data } = await $host.get(REACT_APP_API_URL);
+  console.log(data);
   return data;
 };
 

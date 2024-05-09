@@ -3,11 +3,11 @@ import classes from "./FilterSelect.module.css";
 import FilterInputTitle from "../../../../../UI/FilterInputTitle/FilterInputTitle";
 import AntdSelect from "../../../../../UI/Select/AntdSelect";
 
-const FilterSelect = ({ title, dropTitle, options }) => {
+const FilterSelect = ({ title, options, filterType }) => {
   return (
     <div className={classes.dropDown__container}>
       <FilterInputTitle title={title} />
-      <AntdSelect />
+      <AntdSelect options={options} filterType={filterType} />
     </div>
   );
 };
