@@ -15,3 +15,11 @@
 .btn__container {
   display: flex;
 }
+
+@media (max-width: 1900px) {
+  .difficult__container {
+    width: auto;
+    flex-direction: column;
+    height: auto;
+  }
+}

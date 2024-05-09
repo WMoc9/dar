@@ -2,8 +2,7 @@ import { REACT_APP_API_URL } from "../utils/consts";
 import { $host } from "./index";
 
 export const fetchAllRecipes = async () => {
-  const { data } = await $host.get(REACT_APP_API_URL);
-  console.log(data);
+  const { data } = await $host.get(REACT_APP_API_URL + `?limit=100`);
   return data;
 };
 

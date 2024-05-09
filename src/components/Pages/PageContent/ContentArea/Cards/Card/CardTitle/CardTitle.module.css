@@ -1,5 +1,4 @@
 .cardTitle__container {
-  position: static;
   width: 226.17px;
   height: 354px;
   display: flex;
@@ -14,13 +13,11 @@
 .cardTitile__text {
   width: 226.17px;
   height: 60px;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 16px 24px 16px 24px;
-
   margin: 0px 0px;
   color: rgba(0, 0, 0, 0.85);
   font-family: Roboto;
@@ -40,4 +37,24 @@
   align-items: flex-start;
   padding: 0px;
   margin: 0px 0px;
+}
+
+@media (max-width: 1900px) {
+  .cardTitle__container {
+    padding: 8px 12px;
+  }
+  .cardTitile__img {
+    width: 150px;
+    height: 175px;
+  }
+  .cardTitile__text {
+    width: auto;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cardTitle__container {
+    padding: 8px 0;
+  }
 }

@@ -16,3 +16,9 @@
   letter-spacing: 0%;
   text-align: right;
 }
+
+@media (max-width: 1900px) {
+  .dropDown__title {
+    width: auto;
+  }
+}

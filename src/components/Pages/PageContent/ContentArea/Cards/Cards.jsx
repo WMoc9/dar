@@ -1,39 +1,44 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import classes from "./Cards.module.css";
 import Card from "./Card/Card";
-import { fetchRecipesWithLimitAndSkip } from "../../../../../http/recipesAPI";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { Spin } from "antd";
 
-const Cards = () => {
-  const [recipesData, setRecipesData] = useState([]);
-
+const Cards = ({ filteredRecipes, isLoading }) => {
   const page = useSelector((state) => state.page.number);
 
-  useEffect(() => {
-    fetchRecipesWithLimitAndSkip(6, page === 1 ? 0 : (page - 1) * 6).then(
-      (data) => setRecipesData(data.recipes)
-    );
-  }, [page]);
+  const limit = 6;
+  const startIndex = (page - 1) * limit;
+  const endIndex = startIndex + limit;
+  const paginatedRecipes = filteredRecipes.slice(startIndex, endIndex);
+
+  useEffect(() => {}, [filteredRecipes, page]);
 
   return (
     <div className={classes.cards__container}>
-      {recipesData.length > 0
-        ? recipesData.map((item) => (
-            <Link className={classes.link} to={`/${item.id}`} key={item.id}>
-              <Card
-                key={item.id}
-                name={item.name}
-                ingredients={item.ingredients}
-                cookTimeMinutes={item.cookTimeMinutes}
-                difficulty={item.difficulty}
-                cuisine={item.cuisine}
-                mealType={item.mealType}
-                image={item.image}
-              />
-            </Link>
-          ))
-        : null}
+      {paginatedRecipes.length > 0 ? (
+        paginatedRecipes.map((item) => (
+          <Link className={classes.link} to={`/${item.id}`} key={item.id}>
+            <Card
+              key={item.id}
+              name={item.name}
+              ingredients={item.ingredients}
+              cookTimeMinutes={item.cookTimeMinutes}
+              difficulty={item.difficulty}
+              cuisine={item.cuisine}
+              mealType={item.mealType}
+              image={item.image}
+            />
+          </Link>
+        ))
+      ) : isLoading ? (
+        <Spin tip="Loading" size="large"></Spin>
+      ) : (
+        <div className={classes.notFound}>
+          Рецепты по вашим параметрам не найдены
+        </div>
+      )}
     </div>
   );
 };

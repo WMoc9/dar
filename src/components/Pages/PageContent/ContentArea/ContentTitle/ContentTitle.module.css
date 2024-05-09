@@ -1,5 +1,4 @@
 .title__container {
-  position: static;
   width: 1405px;
   height: 56px;
   display: flex;
@@ -13,8 +12,6 @@
 }
 
 .title__content {
-  position: static;
-  width: 1314px;
   height: 24px;
   display: flex;
   flex-direction: row;
@@ -58,4 +55,16 @@
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
+}
+
+@media (max-width: 1900px) {
+  .title__container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1900px) {
+  .title__container {
+    margin: 0 0 0 8px;
+  }
 }

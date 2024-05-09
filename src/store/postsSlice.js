@@ -8,7 +8,6 @@ export const postsSlice = createSlice({
   reducers: {
     changeTotalPosts: (state, action) => {
       state.totalPosts = action.payload;
-      console.log(`всего постов ${state.totalPosts}`);
     },
   },
 });

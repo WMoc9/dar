@@ -85,3 +85,23 @@
 
   margin: 0px 6px;
 }
+
+@media (max-width: 1900px) {
+  .description__container {
+    padding: 12px 4px;
+  }
+  .description__text,
+  .description__time,
+  .description__difficulty,
+  .description__kitchen,
+  .description__meal,
+  .star__container {
+    width: auto;
+  }
+}
+
+@media (max-width: 1300px) {
+  .description__container {
+    width: 140px;
+  }
+}

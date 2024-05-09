@@ -1,0 +1,18 @@
+.secondPage__conatainer {
+  position: relative;
+  width: 1920px;
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 12px;
+}
+
+.spinner__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}

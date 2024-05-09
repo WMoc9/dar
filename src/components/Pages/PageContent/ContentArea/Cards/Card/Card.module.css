@@ -9,3 +9,18 @@
   margin: 6px;
   background-color: white;
 }
+@media (max-width: 1900px) {
+  .card__container {
+    width: 330px;
+  }
+}
+@media (max-width: 1300px) {
+  .card__container {
+    width: 310px;
+  }
+}
+@media (max-width: 1000px) {
+  .card__container {
+    width: 100%;
+  }
+}

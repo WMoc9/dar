@@ -1,5 +1,4 @@
 .input__container {
-  /* Input */
   position: relative;
   width: 417px;
   height: 198px;
@@ -31,4 +30,14 @@
   border: none;
   background: none;
   cursor: pointer;
+}
+
+@media (max-width: 1900px) {
+  .input__container {
+    width: auto;
+    align-items: center;
+  }
+  .input__btn {
+    margin: 6px 0;
+  }
 }

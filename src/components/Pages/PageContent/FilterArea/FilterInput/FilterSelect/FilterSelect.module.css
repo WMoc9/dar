@@ -1,11 +1,19 @@
 .dropDown__container {
-  position: static;
   width: 417px;
   height: 38px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+}
+
+@media (max-width: 1900px) {
+  .dropDown__container {
+    width: auto;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
 }

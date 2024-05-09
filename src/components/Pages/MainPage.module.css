@@ -1,0 +1,42 @@
+.mainPage__container {
+  max-width: 1920px;
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 12px;
+  background: rgb(239, 239, 239);
+}
+
+@media (max-width: 1900px) {
+  .mainPage__container {
+    width: 1700px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1500px) {
+  .mainPage__container {
+    width: 1300px;
+    min-height: 1300px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .mainPage__container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainPage__container {
+    min-height: 2500px;
+  }
+}
+
+@media (max-width: 780px) {
+  .mainPage__container {
+    min-height: 3500px;
+  }
+}

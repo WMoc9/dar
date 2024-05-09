@@ -16,12 +16,14 @@ const AntdSelect = ({ options, filterType }) => {
 
   const handleChange = (value, filterType) => {
     setCurrentValue(value);
+
     if (filterType === "country") {
       dispatch(changeCountry(value));
     } else if (filterType === "typeMeal") {
       dispatch(changeTypeMeal(value));
     }
   };
+
   return (
     <ConfigProvider
       theme={{

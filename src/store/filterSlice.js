@@ -20,7 +20,6 @@ export const filterSlice = createSlice({
     changeDifficulty: (state, action) => {
       state.difficulty = action.payload;
       state.filtersReset = false;
-      console.log(state.difficulty);
     },
     resetFilters: (state) => {
       state.country = "*";
