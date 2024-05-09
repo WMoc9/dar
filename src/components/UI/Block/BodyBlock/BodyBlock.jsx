@@ -1,9 +1,9 @@
 import classes from "./BodyBlock.module.css";
 
-const BodyBlock = ({ value, classs, moreInfo }) => {
+const BodyBlock = ({ value, classs, moreInfo, type }) => {
   const moreInformation = moreInfo || false;
 
-  if (Array.isArray(value)) {
+  if (type === "instructions" && value !== undefined) {
     return (
       <ul className={classes.list}>
         {value.map((item, index) => (
@@ -12,6 +12,22 @@ const BodyBlock = ({ value, classs, moreInfo }) => {
           </li>
         ))}
       </ul>
+    );
+  }
+  if (type === "tags" && value !== undefined) {
+    const formattedTags = value.map((tag) => `#${tag}`).join(", ");
+    return (
+      <div className={classes.bodyBlock__conatiner}>
+        <div className={classs}>{formattedTags}</div>
+      </div>
+    );
+  }
+  if (type === "description" && value !== undefined) {
+    const formattedDesc = value.map((tag) => `${tag}`).join(". ");
+    return (
+      <div className={classes.bodyBlock__conatiner}>
+        <div className={classs}>{formattedDesc}</div>
+      </div>
     );
   }
   return (

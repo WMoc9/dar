@@ -42,7 +42,7 @@
   justify-content: center;
   align-items: center;
   padding: 4px 15px 4px 15px;
-
+  cursor: pointer;
   color: rgba(0, 0, 0, 0.85);
   font-family: Roboto;
   font-size: 14px;
@@ -58,4 +58,8 @@
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
 
   background: rgb(255, 255, 255);
+}
+
+.additional__btn:active {
+  background-color: rgba(128, 128, 128, 0.096);
 }

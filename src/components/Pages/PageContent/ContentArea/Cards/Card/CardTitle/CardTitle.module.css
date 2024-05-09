@@ -34,6 +34,7 @@
   width: 226.17px;
   height: 294px;
   display: flex;
+  object-fit: cover;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;

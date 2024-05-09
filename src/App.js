@@ -1,12 +1,13 @@
 import "./App.css";
-import SecondPage from "./components/Pages/SecondPage";
-// import MainPage from "./components/Pages/MainPage";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      {/* <MainPage /> */}
-      <SecondPage />
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </div>
   );
 }
