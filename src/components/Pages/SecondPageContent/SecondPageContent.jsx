@@ -17,17 +17,19 @@ const SecondPageContent = ({
 }) => {
   return (
     <div className={classes.content__container}>
-      <InfoBlock
-        cuisine={cuisine}
-        tags={tags}
-        caloriesPerServing={caloriesPerServing}
-        servings={servings}
-        ingredients={ingredients}
-      />
-      <InstructionBlock
-        cookTimeMinutes={cookTimeMinutes}
-        instructions={instructions}
-      />
+      <div className={classes.secPageContent__wrapper}>
+        <InfoBlock
+          cuisine={cuisine}
+          tags={tags}
+          caloriesPerServing={caloriesPerServing}
+          servings={servings}
+          ingredients={ingredients}
+        />
+        <InstructionBlock
+          cookTimeMinutes={cookTimeMinutes}
+          instructions={instructions}
+        />
+      </div>
       <ImageBlock image={image} id={id} />
     </div>
   );

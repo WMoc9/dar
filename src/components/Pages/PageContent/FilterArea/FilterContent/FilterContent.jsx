@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../../../../assets/Image.png";
 import classes from "./FilterContent.module.css";
+import gif from "../../../../assets/cats.gif";
 
 const FilterContent = () => {
+  const [srcImg, setSrcImg] = useState(img);
+  function changeSrc() {
+    srcImg === img ? setSrcImg(gif) : setSrcImg(img);
+  }
   return (
     <div className={classes.filterContent__container}>
-      <img className={classes.filterContent__img} src={img} alt="Блюдо"></img>
+      <div className={classes.filterContent__imgWrapper} onClick={changeSrc}>
+        <img className={classes.filterContent__img} src={srcImg} alt="Блюдо" />
+        {srcImg === img ? (
+          <div className={classes.filterContent__imgText}>Нажми на меня</div>
+        ) : null}
+      </div>
       <div className={classes.filterContent__description}>
         <p className={classes.filterContent__description__item}>
           В нашей жизни, когда время становится все более ценным ресурсом,

@@ -1,10 +1,11 @@
 .cards__container {
+  position: relative;
   width: 1405px;
   height: 740px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 0px;
 
@@ -16,8 +17,13 @@
   text-decoration: none;
 }
 
+.spin__wrapper {
+  margin: 128px;
+}
+
 .notFound {
   font-size: 32px;
+  margin: 128px 32px;
 }
 
 @media (max-width: 1900px) {
@@ -28,15 +34,9 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .cards__container {
-    justify-content: flex-start;
-  }
-}
 @media (max-width: 1000px) {
   .cards__container {
     flex-direction: column;
-    justify-content: flex-start;
   }
   .link {
     width: 100%;

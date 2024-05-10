@@ -36,6 +36,8 @@
   .input__container {
     width: auto;
     align-items: center;
+    gap: 5px;
+    height: auto;
   }
   .input__btn {
     margin: 6px 0;

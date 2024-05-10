@@ -33,7 +33,9 @@ const Cards = ({ filteredRecipes, isLoading }) => {
           </Link>
         ))
       ) : isLoading ? (
-        <Spin tip="Loading" size="large"></Spin>
+        <div className={classes.spin__wrapper}>
+          <Spin tip="Loading" size="large"></Spin>
+        </div>
       ) : (
         <div className={classes.notFound}>
           Рецепты по вашим параметрам не найдены

@@ -1,10 +1,17 @@
 .wrapper {
   width: 465px;
-  height: 852px;
+  max-height: 852px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  margin: 0px 12px;
+  gap: 12px;
+}
+
+@media (max-width: 1450px) {
+  .wrapper {
+    align-items: center;
+    width: auto;
+  }
 }

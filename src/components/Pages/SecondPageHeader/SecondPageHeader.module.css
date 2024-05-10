@@ -48,3 +48,15 @@
   margin: 0px 16px;
   cursor: pointer;
 }
+
+@media (max-width: 1900px) {
+  .header__conatiner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .header__content {
+    width: 100%;
+  }
+}

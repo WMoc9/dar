@@ -65,12 +65,14 @@
 @media (max-width: 1900px) {
   .additional__container {
     width: auto;
-    margin: 8px;
+    margin: 0;
     justify-content: flex-start;
+    height: auto;
   }
   .additional__text {
     padding: 8px;
     margin: 0;
     width: auto;
+    height: auto;
   }
 }
