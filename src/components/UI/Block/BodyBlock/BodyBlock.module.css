@@ -62,6 +62,7 @@
   }
   .list__item {
     width: 250px;
+    padding: 0px 6px 10px 26px;
   }
 }
 

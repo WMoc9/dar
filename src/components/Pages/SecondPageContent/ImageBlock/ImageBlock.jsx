@@ -1,8 +1,7 @@
 import classes from "./ImageBlock.module.css";
-import arrowL from "../../../assets/Left.svg";
-import arrowR from "../../../assets/Right.svg";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import MyPagination from "../../../UI/MyPagination/MyPagination";
 
 const ImageBlock = ({ image, id }) => {
   const totalPosts = useSelector((state) => state.posts.totalPosts);
@@ -27,24 +26,12 @@ const ImageBlock = ({ image, id }) => {
       <div className={classes.img__wrapper}>
         <img className={classes.imageBlock__img} src={image} alt={"Блюдо"} />
       </div>
-      <div className={classes.pagination__wrapper}>
-        <div className={classes.arrow__conatiner}>
-          <button
-            disabled={isFirstPage}
-            onClick={handlePrevClick}
-            className={classes.arrow__wrapper}
-          >
-            <img className={classes.arrow} src={arrowL} alt={"Лево"} />
-          </button>
-          <button
-            onClick={handleNextClick}
-            disabled={isLastPage}
-            className={classes.arrow__wrapper}
-          >
-            <img className={classes.arrow} src={arrowR} alt={"Право"} />
-          </button>
-        </div>
-      </div>
+      <MyPagination
+        isFirstPage={isFirstPage}
+        isLastPage={isLastPage}
+        nextClick={handleNextClick}
+        prevClick={handlePrevClick}
+      />
     </div>
   );
 };
